@@ -1,0 +1,2111 @@
+
+    <!DOCTYPE html>
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <title>无人机自主任务评测报告</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; }
+            .metric-card { border: 1px solid #ccc; padding: 15px; margin: 10px 0; border-radius: 5px; }
+            .scenario-section { margin: 20px 0; }
+            img { max-width: 100%; height: auto; }
+        </style>
+    </head>
+    <body>
+        <h1>无人机自主任务评测报告</h1>
+        <h2>整体评测图表</h2>
+        <img src="evaluation_chart.png" alt="评测指标图表">
+
+        <h2>各场景详细结果</h2>
+        
+    <div class="scenario-section">
+        <h3>场景 S011: 高空2.5米高度定高飞行</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 6.04 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 1.15 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S012: 小半径原地盘旋1圈</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 6.68 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.72 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S013: 向前飞行2米后返回起点</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 未完成</p>
+            <p><strong>任务完成率:</strong> 0.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 6.92 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.00 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S014: 连续垂直升降2次</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 7.48 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 3.01 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S015: 缓慢向前飞行1米</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 未完成</p>
+            <p><strong>任务完成率:</strong> 0.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 5.74 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.00 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S016: 斜向前方飞行2米</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 6.91 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 2.76 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S017: 水平定高巡航3米</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 6.25 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 3.91 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S018: 起飞后稳定悬停</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 未完成</p>
+            <p><strong>任务完成率:</strong> 0.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 5.15 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.00 米</p>
+            <p><strong>系统异常率:</strong> 1.0779 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S019: 向左前方飞行1.5米</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 6.75 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 1.06 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S020: 向右前方飞行1.5米</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 7.29 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 1.13 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S021: 飞行正方形航线（边长2米）</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 7.01 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.69 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S022: 绕定点缓慢圆周飞行</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 11.03 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 3.06 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S023: 高度从1米渐变至2米飞行</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 5.51 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 3.08 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S024: 沿场地边界慢速飞行</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 15.04 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 4.86 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S025: S型航线飞行3米</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 9.50 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.62 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S026: 斜向长距离飞行4米</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 15.84 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 2.98 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S027: 低速绕开简单障碍物飞行</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 12.42 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.74 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S028: 矩形航线巡航飞行</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 8.89 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 5.54 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S029: 两点之间往返飞行2次</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 未完成</p>
+            <p><strong>任务完成率:</strong> 0.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 9.99 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.00 米</p>
+            <p><strong>系统异常率:</strong> 0.1035 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S030: 定高直线飞行5米</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 5.62 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 1.70 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S031: 识别树木后在旁边悬停</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 12.98 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.02 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S032: 识别石头后飞行至石头旁</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 6.53 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 1.37 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S033: 识别树桩后环绕飞行1圈</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 20.18 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.58 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S034: 识别灌木后低空飞过</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 9.98 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.64 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S035: 识别空地后飞行至空地中心</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 6.78 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.02 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S036: 识别树干后靠近至1米处</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 7.63 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.55 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S037: 识别草丛后在上方悬停</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 14.04 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.66 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+    <div class="scenario-section">
+        <h3>场景 S038: 识别石块后低空掠过</h3>
+        <div class="metric-card">
+            <p><strong>任务完成状态:</strong> 完成</p>
+            <p><strong>任务完成率:</strong> 100.00%</p>
+            <p><strong>LLM平均规划耗时:</strong> 9.15 秒</p>
+            <p><strong>LLM指令理解准确率:</strong> 100.00%</p>
+            <p><strong>视觉识别准确率:</strong> 0.00%</p>
+            <p><strong>目标定位:</strong></p>
+            <ul><li>无数据</li></ul>
+            <p><strong>平均路径偏差:</strong> 0.42 米</p>
+            <p><strong>系统异常率:</strong> 0.0000 次/小时</p>
+        </div>
+    </div>
+    
+
+        <h2>原始数据（JSON）</h2>
+        <pre>{
+    "S011": {
+        "scenario_info": {
+            "scenario_id": "S011",
+            "task_description": "高空2.5米高度定高飞行",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "high",
+                "obstacles": 0,
+                "space_size": "5x5x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531430.4080527,
+                "type": "llm_planning",
+                "instruction": "高空2.5米高度定高飞行",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese and translates to 'Fly at a fixed altitude of 2.5 meters high in the sky.' The scene description includes an umbrella, but the task is about altitude control, which is independent of the current scene. The robot has a takeoff skill to set altitude. We'll use takeoff(2.5) to achieve the fixed-altitude flight.\",\n    \"plan\": \"takeoff(2.5)\\nlog('Now flying at a fixed altitude of 2.5 meters.')\"\n}",
+                "planning_time": 6.037104845046997,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531431.0431697,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531436.5829096,
+                "type": "robot_execution",
+                "planned_actions": "takeoff(2.5)\nlog('Now flying at a fixed altitude of 2.5 meters.')",
+                "total_run_time": 5.5397398471832275,
+                "avg_path_deviation": 1.1548691483812503,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 6.037104845046997,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 1.1548691483812503,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S012": {
+        "scenario_info": {
+            "scenario_id": "S012",
+            "task_description": "小半径原地盘旋1圈",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 2,
+                "space_size": "6x6x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531447.462476,
+                "type": "llm_planning",
+                "instruction": "小半径原地盘旋1圈",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese and translates to 'small radius hover in place for 1 circle'. This likely means the robot should perform a small-radius circular motion while staying in roughly the same spot, like a drone doing a yaw rotation. Since the scene includes a car but the task is about robot movement, we can ignore the scene. The robot has rotation skills (rotate_left/right) which can be used to turn 360 degrees. 'Small radius' might imply a tight turn, but with only rotation skills, we can only rotate in place. We'll rotate 360 degrees to complete one circle.\",\n    \"plan\": \"rotate_right(360)\\nlog('已完成小半径原地盘旋1圈')\"\n}",
+                "planning_time": 6.678842067718506,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531448.0159,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531450.8700325,
+                "type": "robot_execution",
+                "planned_actions": "rotate_right(360)\nlog('已完成小半径原地盘旋1圈')",
+                "total_run_time": 2.854132652282715,
+                "avg_path_deviation": 0.7182379796934426,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 6.678842067718506,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.7182379796934426,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S013": {
+        "scenario_info": {
+            "scenario_id": "S013",
+            "task_description": "向前飞行2米后返回起点",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 1,
+                "space_size": "5x5x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531459.8120549,
+                "type": "llm_planning",
+                "instruction": "向前飞行2米后返回起点",
+                "planning_result": "```json\n{\n    \"thoughts\": \"The user instruction is in Chinese: '向前飞行2米后返回起点' which translates to 'Fly forward 2 meters and then return to the starting point.' Since no objects are mentioned in the scene description, this is a purely navigational task. The drone needs to move forward a set distance and then move backward the same distance to return. The 'move_forward' and 'move_backward' skills are appropriate for this.\",\n    \"plan\": \"log('Starting task: Fly forward 2 meters and return.')\\nmove_forward(2.0)\\ndelay(1.0)\\nlog('Moved forward 2 meters. Now returning to start.')\\nmove_backward(2.0)\\ndelay(1.0)\\nlog('Task complete. Returned to starting point.')\"\n}\n```",
+                "planning_time": 6.921080589294434,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531460.3973365,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 0.0,
+            "avg_planning_time": 6.921080589294434,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.0,
+            "exception_rate": 0.0
+        },
+        "is_completed": false
+    },
+    "S014": {
+        "scenario_info": {
+            "scenario_id": "S014",
+            "task_description": "连续垂直升降2次",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 0,
+                "space_size": "5x5x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531469.8922489,
+                "type": "llm_planning",
+                "instruction": "连续垂直升降2次",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese, meaning 'perform continuous vertical takeoff and landing twice'. This involves taking off to a certain altitude, landing, and repeating. Since the scene includes cars but the task is independent of the scene, we can ignore the scene details. We'll use takeoff and land skills. Need to choose a safe altitude, e.g., 2 meters. We'll perform takeoff, land, then repeat.\",\n    \"plan\": \"altitude = 2.0\\nfor i in range(2):\\n    log(f'Takeoff {i+1}')\\n    takeoff(altitude)\\n    delay(2)\\n    log(f'Land {i+1}')\\n    land()\\n    delay(2)\\nlog('Vertical takeoff and landing completed twice.')\"\n}",
+                "planning_time": 7.478599786758423,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531470.430688,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531486.2972887,
+                "type": "robot_execution",
+                "planned_actions": "altitude = 2.0\nfor i in range(2):\n    log(f'Takeoff {i+1}')\n    takeoff(altitude)\n    delay(2)\n    log(f'Land {i+1}')\n    land()\n    delay(2)\nlog('Vertical takeoff and landing completed twice.')",
+                "total_run_time": 15.866600751876831,
+                "avg_path_deviation": 3.0074023370354777,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 7.478599786758423,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 3.0074023370354777,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S015": {
+        "scenario_info": {
+            "scenario_id": "S015",
+            "task_description": "缓慢向前飞行1米",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "low",
+                "obstacles": 1,
+                "space_size": "5x5x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531496.0877712,
+                "type": "llm_planning",
+                "instruction": "缓慢向前飞行1米",
+                "planning_result": "```json\n{\n    \"thoughts\": \"用户指令是‘缓慢向前飞行1米’，这是一个直接的移动指令。当前场景中有一个boat_1，但任务与它无关，只是让机器人向前移动1米。由于指令要求‘缓慢’，可以在移动前添加一个短暂的延迟来模拟缓慢开始，或者使用较小的分步移动。这里选择在移动前添加一个短暂的延迟。使用move_forward(1.0)技能。\",\n    \"plan\": \"log('开始缓慢向前飞行1米。')\\ndelay(0.5)\\nmove_forward(1.0)\\nlog('向前飞行1米完成。')\"\n}\n```",
+                "planning_time": 5.74399209022522,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531496.6685872,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 0.0,
+            "avg_planning_time": 5.74399209022522,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.0,
+            "exception_rate": 0.0
+        },
+        "is_completed": false
+    },
+    "S016": {
+        "scenario_info": {
+            "scenario_id": "S016",
+            "task_description": "斜向前方飞行2米",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 2,
+                "space_size": "6x6x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531505.5845294,
+                "type": "llm_planning",
+                "instruction": "斜向前方飞行2米",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese: '斜向前方飞行2米', which translates to 'Fly diagonally forward 2 meters'. Since there's no scene description, we assume the robot is in an open area. To move diagonally forward, we need to combine forward and lateral movements. Assuming a 45-degree diagonal, we can move forward and right (or left) by equal distances. Using Pythagorean theorem, each component should be sqrt(2) ≈ 1.414 meters for a total displacement of 2 meters. We'll move forward and right by 1.414 meters each.\",\n    \"plan\": \"import math\\ndist = 2.0\\ncomponent = dist / math.sqrt(2)\\nmove_forward(component)\\nmove_right(component)\\nlog('Moved diagonally forward 2 meters.')\"\n}",
+                "planning_time": 6.907721042633057,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531506.221132,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531512.9663017,
+                "type": "robot_execution",
+                "planned_actions": "import math\ndist = 2.0\ncomponent = dist / math.sqrt(2)\nmove_forward(component)\nmove_right(component)\nlog('Moved diagonally forward 2 meters.')",
+                "total_run_time": 6.745169639587402,
+                "avg_path_deviation": 2.764610773983883,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 6.907721042633057,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 2.764610773983883,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S017": {
+        "scenario_info": {
+            "scenario_id": "S017",
+            "task_description": "水平定高巡航3米",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 1,
+                "space_size": "6x6x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531523.1470337,
+                "type": "llm_planning",
+                "instruction": "水平定高巡航3米",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction '水平定高巡航3米' translates to 'cruise horizontally at a fixed altitude of 3 meters'. This implies the robot is likely a drone. The scene description includes boats, but the task is about flying at a fixed altitude, which is independent of the current scene objects. We need to take off to 3 meters and then maintain that altitude while moving forward (cruising). Since no specific direction or distance is given, we'll assume a forward cruise for a reasonable distance (e.g., 5 meters) and then land.\",\n    \"plan\": \"takeoff(3.0)\\nmove_forward(5.0)\\nland()\"\n}",
+                "planning_time": 6.252131700515747,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531523.760936,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531535.5368228,
+                "type": "robot_execution",
+                "planned_actions": "takeoff(3.0)\nmove_forward(5.0)\nland()",
+                "total_run_time": 11.77588677406311,
+                "avg_path_deviation": 3.914850359071291,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 6.252131700515747,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 3.914850359071291,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S018": {
+        "scenario_info": {
+            "scenario_id": "S018",
+            "task_description": "起飞后稳定悬停",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 0,
+                "space_size": "5x5x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                0.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531547.0338144,
+                "type": "llm_planning",
+                "instruction": "起飞后稳定悬停",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese and translates to 'Take off and hover stably'. The scene description includes an umbrella, but the task is about drone takeoff and hovering, which is independent of the current scene. The drone has takeoff and hover capabilities via 'takeoff' and 'delay' skills. I'll plan a takeoff to a safe altitude (e.g., 2 meters) and then hover for a few seconds.\",\n    \"plan\": \"takeoff(2.0)\\ndelay(5.0)\\nlog('Drone is hovering stably.')\"\n}",
+                "planning_time": 5.150097370147705,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531547.745878,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531548.6735773,
+                "type": "robot_execution",
+                "planned_actions": "takeoff(2.0)\ndelay(5.0)\nlog('Drone is hovering stably.')",
+                "total_run_time": 0.9276993274688721,
+                "avg_path_deviation": 0.0,
+                "has_exception": true
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 0.0,
+            "avg_planning_time": 5.150097370147705,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.0,
+            "exception_rate": 1.0779354586020802
+        },
+        "is_completed": false
+    },
+    "S019": {
+        "scenario_info": {
+            "scenario_id": "S019",
+            "task_description": "向左前方飞行1.5米",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 2,
+                "space_size": "6x6x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531559.0236325,
+                "type": "llm_planning",
+                "instruction": "向左前方飞行1.5米",
+                "planning_result": "{\n    \"thoughts\": \"用户指令是中文，意思是'向左前方飞行1.5米'。由于没有场景描述，这是一个纯粹的移动指令。机器人需要同时向左和向前移动。假设'左前方'意味着向左前方45度方向移动。可以使用组合移动技能：先向左移动一定距离，再向前移动一定距离，或者使用绝对位置设置。由于技能列表中没有直接向左前方移动的技能，需要分解动作。根据勾股定理，向左和向前各移动约1.06米（1.5 / √2 ≈ 1.06），可以达到向左前方1.5米的效果。\",\n    \"plan\": \"import math\\ndist = 1.5 / math.sqrt(2)\\nmove_left(dist)\\nmove_forward(dist)\\nlog('已向左前方飞行1.5米')\"\n}",
+                "planning_time": 6.746729612350464,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531559.651742,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531566.4079854,
+                "type": "robot_execution",
+                "planned_actions": "import math\ndist = 1.5 / math.sqrt(2)\nmove_left(dist)\nmove_forward(dist)\nlog('已向左前方飞行1.5米')",
+                "total_run_time": 6.756243467330933,
+                "avg_path_deviation": 1.0628832292783645,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 6.746729612350464,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 1.0628832292783645,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S020": {
+        "scenario_info": {
+            "scenario_id": "S020",
+            "task_description": "向右前方飞行1.5米",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 2,
+                "space_size": "6x6x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531577.4674113,
+                "type": "llm_planning",
+                "instruction": "向右前方飞行1.5米",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese, meaning 'Fly forward to the right by 1.5 meters'. This is a movement command that requires both forward and rightward motion. Since there is no scene description, the task is independent of the current view. I'll plan a combined movement: move forward and right by appropriate distances to achieve a diagonal displacement of 1.5 meters in the right-forward direction. Assuming a 45-degree angle, the forward and right components should each be 1.5 / √2 ≈ 1.06 meters.\",\n    \"plan\": \"import math\\n# Calculate forward and right components for a 45-degree diagonal\\nforward_dist = 1.5 / math.sqrt(2)\\nright_dist = 1.5 / math.sqrt(2)\\nlog('Flying forward-right by 1.5 meters...')\\nmove_forward(forward_dist)\\nmove_right(right_dist)\\nlog('Movement completed.')\"\n}",
+                "planning_time": 7.290852069854736,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531578.288388,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531584.2511134,
+                "type": "robot_execution",
+                "planned_actions": "import math\n# Calculate forward and right components for a 45-degree diagonal\nforward_dist = 1.5 / math.sqrt(2)\nright_dist = 1.5 / math.sqrt(2)\nlog('Flying forward-right by 1.5 meters...')\nmove_forward(forward_dist)\nmove_right(right_dist)\nlog('Movement completed.')",
+                "total_run_time": 5.962725400924683,
+                "avg_path_deviation": 1.1336695979306537,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 7.290852069854736,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 1.1336695979306537,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S021": {
+        "scenario_info": {
+            "scenario_id": "S021",
+            "task_description": "飞行正方形航线（边长2米）",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 3,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531594.8041356,
+                "type": "llm_planning",
+                "instruction": "飞行正方形航线（边长2米）",
+                "planning_result": "{\n    \"thoughts\": \"The user wants the robot (likely a drone) to fly a square path with side length 2 meters. The scene includes a boat, but the task is independent of the current scene. We'll use the drone's movement skills to execute the square. We'll assume the drone is already airborne or will take off first. We'll plan a square by moving forward, right, backward, left (or similar pattern) relative to its starting orientation, each for 2 meters.\",\n    \"plan\": \"takeoff(1.0)\\nmove_forward(2.0)\\nmove_right(2.0)\\nmove_backward(2.0)\\nmove_left(2.0)\\nland()\"\n}",
+                "planning_time": 7.012430906295776,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531595.438009,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531611.6776347,
+                "type": "robot_execution",
+                "planned_actions": "takeoff(1.0)\nmove_forward(2.0)\nmove_right(2.0)\nmove_backward(2.0)\nmove_left(2.0)\nland()",
+                "total_run_time": 16.239625692367554,
+                "avg_path_deviation": 0.6863452626792996,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 7.012430906295776,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.6863452626792996,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S022": {
+        "scenario_info": {
+            "scenario_id": "S022",
+            "task_description": "绕定点缓慢圆周飞行",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 3,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531626.1928134,
+                "type": "llm_planning",
+                "instruction": "绕定点缓慢圆周飞行",
+                "planning_result": "{\n    \"thoughts\": \"The user wants the drone to perform a slow circular flight around a fixed point. Since no specific point is given, I'll assume the drone should circle around its current position or a visible object. The scene shows boat_1 and car_1, but neither is explicitly chosen as the center. I'll use the drone's current position as the center for safety and simplicity. The plan will use set_position to move in a circular path with small increments.\",\n    \"plan\": \"import math\\n\\n# Define circular path parameters\\nradius = 2.0  # meters\\ncenter_x, center_y, center_z = 0, 0, 5  # Assume starting at origin, 5m altitude\\nsteps = 36  # Number of steps for a full circle\\nangle_step = 360 / steps\\n\\n# Ensure drone is at starting altitude\\ntakeoff(5)\\n\\n# Perform slow circular flight\\nfor i in range(steps + 1):\\n    angle = math.radians(i * angle_step)\\n    x = center_x + radius * math.cos(angle)\\n    y = center_y + radius * math.sin(angle)\\n    set_position(x, y, center_z)\\n    delay(0.5)  # Slow movement\\n\\n# Return to center and land\\nset_position(center_x, center_y, center_z)\\nland()\"\n}",
+                "planning_time": 11.033661842346191,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531627.0223544,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531831.852563,
+                "type": "robot_execution",
+                "planned_actions": "import math\n\n# Define circular path parameters\nradius = 2.0  # meters\ncenter_x, center_y, center_z = 0, 0, 5  # Assume starting at origin, 5m altitude\nsteps = 36  # Number of steps for a full circle\nangle_step = 360 / steps\n\n# Ensure drone is at starting altitude\ntakeoff(5)\n\n# Perform slow circular flight\nfor i in range(steps + 1):\n    angle = math.radians(i * angle_step)\n    x = center_x + radius * math.cos(angle)\n    y = center_y + radius * math.sin(angle)\n    set_position(x, y, center_z)\n    delay(0.5)  # Slow movement\n\n# Return to center and land\nset_position(center_x, center_y, center_z)\nland()",
+                "total_run_time": 204.83020853996277,
+                "avg_path_deviation": 3.0631320266736024,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 11.033661842346191,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 3.0631320266736024,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S023": {
+        "scenario_info": {
+            "scenario_id": "S023",
+            "task_description": "高度从1米渐变至2米飞行",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "low",
+                "obstacles": 2,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531841.075342,
+                "type": "llm_planning",
+                "instruction": "高度从1米渐变至2米飞行",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese, meaning 'Fly from 1 meter to 2 meters altitude gradually.' The scene includes a boat, but the task is about altitude change, which is independent of the scene. The drone can use takeoff to reach 1m, then lift to increase altitude gradually to 2m.\",\n    \"plan\": \"takeoff(1.0)\\ndelay(1.0)\\nlift(1.0)\\ndelay(1.0)\\nlog('Altitude increased from 1m to 2m gradually.')\"\n}",
+                "planning_time": 5.50600266456604,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531841.6703877,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776531852.0028155,
+                "type": "robot_execution",
+                "planned_actions": "takeoff(1.0)\ndelay(1.0)\nlift(1.0)\ndelay(1.0)\nlog('Altitude increased from 1m to 2m gradually.')",
+                "total_run_time": 10.332427740097046,
+                "avg_path_deviation": 3.0784493344512125,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 5.50600266456604,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 3.0784493344512125,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S024": {
+        "scenario_info": {
+            "scenario_id": "S024",
+            "task_description": "沿场地边界慢速飞行",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 4,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776531871.9596844,
+                "type": "llm_planning",
+                "instruction": "沿场地边界慢速飞行",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese, meaning 'Fly slowly along the boundary of the field.' Since there's no explicit boundary object in the scene, I need to interpret 'boundary' as the perimeter of the area. The robot has a drone with takeoff, land, and movement skills. I'll assume the robot is a drone and plan a slow rectangular flight path around the visible area, starting from the current position. I'll incorporate a slow speed by using small incremental moves with delays. Safety is ensured by keeping altitude low and avoiding obstacles.\",\n    \"plan\": \"import time\\n\\n# Take off to a safe altitude\\ntakeoff(2.0)\\ndelay(2.0)\\n\\n# Define a rectangular boundary path (assuming a 10m x 10m area for demonstration)\\n# Move forward 10m slowly\\nfor i in range(10):\\n    move_forward(1.0)\\n    delay(0.5)  # Slow speed\\n\\n# Rotate right 90 degrees\\nrotate_right(90)\\ndelay(1.0)\\n\\n# Move right 10m slowly\\nfor i in range(10):\\n    move_right(1.0)\\n    delay(0.5)\\n\\n# Rotate right 90 degrees\\nrotate_right(90)\\ndelay(1.0)\\n\\n# Move backward 10m slowly\\nfor i in range(10):\\n    move_backward(1.0)\\n    delay(0.5)\\n\\n# Rotate right 90 degrees\\nrotate_right(90)\\ndelay(1.0)\\n\\n# Move left 10m slowly\\nfor i in range(10):\\n    move_left(1.0)\\n    delay(0.5)\\n\\n# Rotate right 90 degrees to return to original orientation\\nrotate_right(90)\\ndelay(1.0)\\n\\n# Land safely\\nland()\\nlog('Completed flying along the boundary.')\"\n}",
+                "planning_time": 15.044787883758545,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776531872.514675,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532001.4250402,
+                "type": "robot_execution",
+                "planned_actions": "import time\n\n# Take off to a safe altitude\ntakeoff(2.0)\ndelay(2.0)\n\n# Define a rectangular boundary path (assuming a 10m x 10m area for demonstration)\n# Move forward 10m slowly\nfor i in range(10):\n    move_forward(1.0)\n    delay(0.5)  # Slow speed\n\n# Rotate right 90 degrees\nrotate_right(90)\ndelay(1.0)\n\n# Move right 10m slowly\nfor i in range(10):\n    move_right(1.0)\n    delay(0.5)\n\n# Rotate right 90 degrees\nrotate_right(90)\ndelay(1.0)\n\n# Move backward 10m slowly\nfor i in range(10):\n    move_backward(1.0)\n    delay(0.5)\n\n# Rotate right 90 degrees\nrotate_right(90)\ndelay(1.0)\n\n# Move left 10m slowly\nfor i in range(10):\n    move_left(1.0)\n    delay(0.5)\n\n# Rotate right 90 degrees to return to original orientation\nrotate_right(90)\ndelay(1.0)\n\n# Land safely\nland()\nlog('Completed flying along the boundary.')",
+                "total_run_time": 128.91036534309387,
+                "avg_path_deviation": 4.860432388949416,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 15.044787883758545,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 4.860432388949416,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S025": {
+        "scenario_info": {
+            "scenario_id": "S025",
+            "task_description": "S型航线飞行3米",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 3,
+                "space_size": "8x8x4m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532017.8171322,
+                "type": "llm_planning",
+                "instruction": "S型航线飞行3米",
+                "planning_result": "{\n    \"thoughts\": \"用户指令是‘S型航线飞行3米’，这是一个无人机飞行任务。由于场景描述为空，我们假设无人机在空旷环境中，需要执行S型航线飞行。S型航线通常意味着左右交替移动，形成一个蛇形路径。我们可以将其分解为一系列交替的左右移动，总距离为3米。为了简单起见，我们可以将3米分成6段，每段0.5米，交替左右移动，形成S形。同时，需要确保无人机起飞到安全高度。\",\n    \"plan\": \"takeoff(1.0)\\ndelay(2.0)\\nmove_right(0.5)\\nmove_left(0.5)\\nmove_right(0.5)\\nmove_left(0.5)\\nmove_right(0.5)\\nmove_left(0.5)\\nland()\"\n}",
+                "planning_time": 9.502430200576782,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532018.417196,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532033.292149,
+                "type": "robot_execution",
+                "planned_actions": "takeoff(1.0)\ndelay(2.0)\nmove_right(0.5)\nmove_left(0.5)\nmove_right(0.5)\nmove_left(0.5)\nmove_right(0.5)\nmove_left(0.5)\nland()",
+                "total_run_time": 14.874953031539917,
+                "avg_path_deviation": 0.6184060432079693,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 9.502430200576782,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.6184060432079693,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S026": {
+        "scenario_info": {
+            "scenario_id": "S026",
+            "task_description": "斜向长距离飞行4米",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "high",
+                "obstacles": 3,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532052.6316776,
+                "type": "llm_planning",
+                "instruction": "斜向长距离飞行4米",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese and translates to 'Fly diagonally for a long distance of 4 meters'. Since the scene description only shows a boat and no specific direction is given, I need to interpret 'diagonally' as moving both forward and right (or left) simultaneously. However, the robot skills only allow movement along cardinal axes (forward/backward/left/right) or absolute positioning via set_position. To achieve diagonal movement, I can combine two moves (e.g., forward and right) sequentially. Alternatively, I can use set_position to move to a diagonal offset from the current position. Since the instruction doesn't specify a direction, I'll assume a forward-right diagonal. I'll also ensure the drone is airborne before moving, but since no takeoff altitude is specified, I'll assume a safe default altitude of 2 meters for takeoff. The plan will: 1) take off, 2) move diagonally by 4 meters (e.g., forward 2.828 m and right 2.828 m to achieve a 4 m diagonal), and 3) land.\",\n    \"plan\": \"import math\\n# Take off to a safe altitude\\ntakeoff(2.0)\\ndelay(2.0)\\n# Calculate the components for a 45-degree diagonal movement of 4 meters\\ndist = 4.0\\ncomponent = dist / math.sqrt(2)  # Approximately 2.828 meters\\n# Move forward and right sequentially to achieve diagonal movement\\nmove_forward(component)\\nmove_right(component)\\ndelay(1.0)\\n# Land the drone\\nland()\\nlog('Completed diagonal flight of 4 meters.')\"\n}",
+                "planning_time": 15.836575269699097,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532053.2966652,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532069.256258,
+                "type": "robot_execution",
+                "planned_actions": "import math\n# Take off to a safe altitude\ntakeoff(2.0)\ndelay(2.0)\n# Calculate the components for a 45-degree diagonal movement of 4 meters\ndist = 4.0\ncomponent = dist / math.sqrt(2)  # Approximately 2.828 meters\n# Move forward and right sequentially to achieve diagonal movement\nmove_forward(component)\nmove_right(component)\ndelay(1.0)\n# Land the drone\nland()\nlog('Completed diagonal flight of 4 meters.')",
+                "total_run_time": 15.959592819213867,
+                "avg_path_deviation": 2.975705976287908,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 15.836575269699097,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 2.975705976287908,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S027": {
+        "scenario_info": {
+            "scenario_id": "S027",
+            "task_description": "低速绕开简单障碍物飞行",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 5,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532086.6816227,
+                "type": "llm_planning",
+                "instruction": "低速绕开简单障碍物飞行",
+                "planning_result": "{\n    \"thoughts\": \"The user wants to fly slowly while avoiding simple obstacles. The scene shows a boat, which could be an obstacle. Since we don't have a specific obstacle avoidance skill, we'll plan a cautious flight path: first check for obstacles, then move forward slowly while scanning and adjusting if obstacles are detected.\",\n    \"plan\": \"log('Starting low-speed flight with obstacle avoidance.')\\n# First, check if the boat is an obstacle in our path\\nif is_visible('boat'):\\n    log('Boat detected as obstacle. Adjusting path.')\\n    # Move left to avoid it, assuming boat is on the right\\n    move_left(1.0)\\n    delay(1.0)\\n# Start slow forward movement with periodic checks\\nfor i in range(5):\\n    move_forward(0.5)  # Move slowly\\n    delay(2.0)  # Wait and observe\\n    # Scan for any new obstacles\\n    obstacle = scan_description('Any obstacle in front?')\\n    if obstacle:\\n        log(f'Obstacle {obstacle} detected. Avoiding.')\\n        move_left(1.0)\\n        delay(1.0)\\nlog('Low-speed flight completed.')\"\n}",
+                "planning_time": 12.417984962463379,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532087.482838,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532280.2687197,
+                "type": "robot_execution",
+                "planned_actions": "log('Starting low-speed flight with obstacle avoidance.')\n# First, check if the boat is an obstacle in our path\nif is_visible('boat'):\n    log('Boat detected as obstacle. Adjusting path.')\n    # Move left to avoid it, assuming boat is on the right\n    move_left(1.0)\n    delay(1.0)\n# Start slow forward movement with periodic checks\nfor i in range(5):\n    move_forward(0.5)  # Move slowly\n    delay(2.0)  # Wait and observe\n    # Scan for any new obstacles\n    obstacle = scan_description('Any obstacle in front?')\n    if obstacle:\n        log(f'Obstacle {obstacle} detected. Avoiding.')\n        move_left(1.0)\n        delay(1.0)\nlog('Low-speed flight completed.')",
+                "total_run_time": 192.7858817577362,
+                "avg_path_deviation": 0.739508224795063,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 12.417984962463379,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.739508224795063,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S028": {
+        "scenario_info": {
+            "scenario_id": "S028",
+            "task_description": "矩形航线巡航飞行",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "low",
+                "obstacles": 4,
+                "space_size": "8x8x4m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532292.5358524,
+                "type": "llm_planning",
+                "instruction": "矩形航线巡航飞行",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese, meaning 'rectangular route cruise flight'. This is a drone navigation task. The scene shows boats and a car, but the task is about flying a rectangular pattern, which is independent of the current scene objects. We need to plan a rectangular flight path. Since no specific dimensions are given, we'll assume a default rectangle (e.g., 10m x 10m). We'll use takeoff, set_position for waypoints, and land.\",\n    \"plan\": \"takeoff(5)\\ndelay(2)\\nset_position(10, 0, -5)\\ndelay(1)\\nset_position(10, 10, -5)\\ndelay(1)\\nset_position(0, 10, -5)\\ndelay(1)\\nset_position(0, 0, -5)\\ndelay(1)\\nland()\"\n}",
+                "planning_time": 8.88947343826294,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532293.1190436,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532350.6841063,
+                "type": "robot_execution",
+                "planned_actions": "takeoff(5)\ndelay(2)\nset_position(10, 0, -5)\ndelay(1)\nset_position(10, 10, -5)\ndelay(1)\nset_position(0, 10, -5)\ndelay(1)\nset_position(0, 0, -5)\ndelay(1)\nland()",
+                "total_run_time": 57.56506276130676,
+                "avg_path_deviation": 5.5362377729585495,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 8.88947343826294,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 5.5362377729585495,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S029": {
+        "scenario_info": {
+            "scenario_id": "S029",
+            "task_description": "两点之间往返飞行2次",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 3,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532368.1794248,
+                "type": "llm_planning",
+                "instruction": "两点之间往返飞行2次",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese and translates to 'Fly back and forth between two points twice'. There is a boat in the scene, but the instruction does not specify which two points. Since the scene only contains a boat, I will assume the two points are the robot's current position and the boat's position. The robot will fly to the boat, return to the start, and repeat once more.\",\n    \"plan\": \"log('Starting back-and-forth flight between current position and the boat, two times.')\\nfor i in range(2):\\n    log(f'Round {i+1}: Flying to the boat.')\\n    goto('boat')\\n    delay(1.0)\\n    log(f'Round {i+1}: Returning to start position.')\\n    move_backward(object_dist('boat'))\\n    delay(1.0)\\nlog('Back-and-forth flight completed.')\"\n}",
+                "planning_time": 9.987068891525269,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532368.9709866,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532378.6362972,
+                "type": "robot_execution",
+                "planned_actions": "log('Starting back-and-forth flight between current position and the boat, two times.')\nfor i in range(2):\n    log(f'Round {i+1}: Flying to the boat.')\n    goto('boat')\n    delay(1.0)\n    log(f'Round {i+1}: Returning to start position.')\n    move_backward(object_dist('boat'))\n    delay(1.0)\nlog('Back-and-forth flight completed.')",
+                "total_run_time": 9.665310621261597,
+                "avg_path_deviation": 0.0,
+                "has_exception": true
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 0.0,
+            "avg_planning_time": 9.987068891525269,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.0,
+            "exception_rate": 0.103462789680056
+        },
+        "is_completed": false
+    },
+    "S030": {
+        "scenario_info": {
+            "scenario_id": "S030",
+            "task_description": "定高直线飞行5米",
+            "target_objects": [
+                "none"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 4,
+                "space_size": "10x10x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532387.3034577,
+                "type": "llm_planning",
+                "instruction": "定高直线飞行5米",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese and translates to 'Fly straight at a fixed altitude for 5 meters'. The scene description includes boats, but the task is a simple straight-line movement. Since the robot has a 'move_forward' skill, we can use that. No objects need to be interacted with, so we disregard the scene. We'll move forward 5 meters.\",\n    \"plan\": \"move_forward(5.0)\"\n}",
+                "planning_time": 5.618319511413574,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532387.8770158,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532395.827949,
+                "type": "robot_execution",
+                "planned_actions": "move_forward(5.0)",
+                "total_run_time": 7.950933218002319,
+                "avg_path_deviation": 1.698960936736283,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 5.618319511413574,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 1.698960936736283,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S031": {
+        "scenario_info": {
+            "scenario_id": "S031",
+            "task_description": "识别树木后在旁边悬停",
+            "target_objects": [
+                "tree"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 5,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532413.238719,
+                "type": "llm_planning",
+                "instruction": "识别树木后在旁边悬停",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese, meaning 'Identify a tree and then hover nearby'. Since there is no scene description, we need to first scan for a tree. We'll use scan_description to find a tree, then approach it using goto, and finally hover (which likely means maintaining position at a certain altitude, but since we don't have altitude control skills like takeoff or lift explicitly mentioned, we'll assume 'hover' means staying in place after reaching the tree, possibly using delay to simulate hovering). However, the available skills include takeoff, land, lift, and set_position, which suggest the robot might be a drone. To hover nearby, we can use set_position to move to a position offset from the tree, but we don't have the tree's 3D coordinates. Alternatively, we can use goto to approach the tree and then log that we are hovering. Given the ambiguity, I'll plan to scan for a tree, go to it, and then log that we are hovering nearby. If no tree is found, we'll report that.\",\n    \"plan\": \"obj = scan_description('A tree')\\nif obj:\\n    goto(obj)\\n    log('Tree identified. Hovering nearby.')\\n    delay(5.0)  # Simulate hovering for 5 seconds\\nelse:\\n    log('No tree found in the view.')\"\n}",
+                "planning_time": 12.975504159927368,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532414.0496693,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532455.3368661,
+                "type": "robot_execution",
+                "planned_actions": "obj = scan_description('A tree')\nif obj:\n    goto(obj)\n    log('Tree identified. Hovering nearby.')\n    delay(5.0)  # Simulate hovering for 5 seconds\nelse:\n    log('No tree found in the view.')",
+                "total_run_time": 41.28719687461853,
+                "avg_path_deviation": 0.020513726711789124,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 12.975504159927368,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.020513726711789124,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S032": {
+        "scenario_info": {
+            "scenario_id": "S032",
+            "task_description": "识别石头后飞行至石头旁",
+            "target_objects": [
+                "stone"
+            ],
+            "env_params": {
+                "light_intensity": "low",
+                "obstacles": 5,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532464.9550846,
+                "type": "llm_planning",
+                "instruction": "识别石头后飞行至石头旁",
+                "planning_result": "{\n    \"thoughts\": \"用户指令是中文，要求'识别石头后飞行至石头旁'，即识别石头然后飞到石头旁边。当前场景描述中没有石头，因此需要使用扫描技能来寻找石头。由于机器人有飞行能力（takeoff, land, lift, set_position），我们可以先扫描石头，如果找到就飞过去。\",\n    \"plan\": \"obj = scan_description('石头')\\nif obj:\\n    takeoff(2.0)\\n    goto(obj)\\n    land()\\nelse:\\n    log('未在视野中发现石头')\"\n}",
+                "planning_time": 6.5311055183410645,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532465.519009,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532506.655602,
+                "type": "robot_execution",
+                "planned_actions": "obj = scan_description('石头')\nif obj:\n    takeoff(2.0)\n    goto(obj)\n    land()\nelse:\n    log('未在视野中发现石头')",
+                "total_run_time": 41.136592864990234,
+                "avg_path_deviation": 1.372131655481272,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 6.5311055183410645,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 1.372131655481272,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S033": {
+        "scenario_info": {
+            "scenario_id": "S033",
+            "task_description": "识别树桩后环绕飞行1圈",
+            "target_objects": [
+                "stump"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 6,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532528.842527,
+                "type": "llm_planning",
+                "instruction": "识别树桩后环绕飞行1圈",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese: '识别树桩后环绕飞行1圈' which translates to 'Identify a tree stump and then fly around it in a circle.' There is no tree stump in the current scene description. Therefore, we need to first scan for a tree stump. If found, we can plan a circular flight path around it. Since the robot has drone skills (takeoff, land, set_position), we can assume it's a drone. We'll need to take off, approach the stump, and then perform a circular maneuver. However, the exact circular path parameters (radius, center) are not known. We can estimate based on the stump's position and a safe distance. We'll use a simple circular path by setting positions at points around a circle. If no stump is found, we report it.\",\n    \"plan\": \"if scan('tree stump'):\\n    log('Tree stump found.')\\n    takeoff(2.0)\\n    goto('tree stump')\\n    # Assume we want to circle at a radius of 2 meters, 8 points for a rough circle\\n    import math\\n    center_x = 0.0  # We need the actual position; object_x gives normalized view coordinate, not world coordinate.\\n    # Since object_x is normalized, we cannot directly use it for set_position. We need to get the stump's world position.\\n    # We'll use probe to reason about the stump's location and plan a circular path.\\n    # For simplicity, we'll assume the stump is at the drone's current position after goto.\\n    # We'll perform a circle by moving in a circular pattern relative to current position.\\n    # However, set_position uses absolute NED coordinates. We don't have the stump's absolute coordinates.\\n    # We need to replan with a more feasible approach: use orienting and move_forward with rotations.\\n    re_plan()\\nelse:\\n    log('No tree stump found in the view.')\"\n}",
+                "planning_time": 20.17768669128418,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532529.561988,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532577.9115074,
+                "type": "robot_execution",
+                "planned_actions": "if scan('tree stump'):\n    log('Tree stump found.')\n    takeoff(2.0)\n    goto('tree stump')\n    # Assume we want to circle at a radius of 2 meters, 8 points for a rough circle\n    import math\n    center_x = 0.0  # We need the actual position; object_x gives normalized view coordinate, not world coordinate.\n    # Since object_x is normalized, we cannot directly use it for set_position. We need to get the stump's world position.\n    # We'll use probe to reason about the stump's location and plan a circular path.\n    # For simplicity, we'll assume the stump is at the drone's current position after goto.\n    # We'll perform a circle by moving in a circular pattern relative to current position.\n    # However, set_position uses absolute NED coordinates. We don't have the stump's absolute coordinates.\n    # We need to replan with a more feasible approach: use orienting and move_forward with rotations.\n    re_plan()\nelse:\n    log('No tree stump found in the view.')",
+                "total_run_time": 48.3495192527771,
+                "avg_path_deviation": 0.5784728012351082,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 20.17768669128418,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.5784728012351082,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S034": {
+        "scenario_info": {
+            "scenario_id": "S034",
+            "task_description": "识别灌木后低空飞过",
+            "target_objects": [
+                "bush"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 5,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532589.8977,
+                "type": "llm_planning",
+                "instruction": "识别灌木后低空飞过",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese, meaning 'Identify shrubs and then fly over them at low altitude'. There are no shrubs in the current scene description, so we need to scan for them. Since 'shrub' is a specific object type, we can use the scan skill. After finding a shrub, we need to fly over it at low altitude. This likely involves moving to the shrub's location and then performing a low-altitude flyover. We'll use orienting and goto to approach the shrub, then take off to a low altitude (e.g., 1 meter) and move forward over it. We'll assume the drone is on the ground initially.\",\n    \"plan\": \"if scan('shrub'):\\n    orienting('shrub')\\n    goto('shrub')\\n    takeoff(1.0)\\n    move_forward(2.0)\\n    land()\\n    log('已完成低空飞过灌木')\\nelse:\\n    log('未在视野中发现灌木')\"\n}",
+                "planning_time": 9.977743148803711,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532590.4761536,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532638.604959,
+                "type": "robot_execution",
+                "planned_actions": "if scan('shrub'):\n    orienting('shrub')\n    goto('shrub')\n    takeoff(1.0)\n    move_forward(2.0)\n    land()\n    log('已完成低空飞过灌木')\nelse:\n    log('未在视野中发现灌木')",
+                "total_run_time": 48.12880539894104,
+                "avg_path_deviation": 0.6363034645124359,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 9.977743148803711,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.6363034645124359,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S035": {
+        "scenario_info": {
+            "scenario_id": "S035",
+            "task_description": "识别空地后飞行至空地中心",
+            "target_objects": [
+                "empty_ground"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 4,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532647.42097,
+                "type": "llm_planning",
+                "instruction": "识别空地后飞行至空地中心",
+                "planning_result": "{\n    \"thoughts\": \"The user wants to identify an empty area (空地) and fly to its center. There's only a boat in the scene, so we need to scan for an empty area. Since 'empty area' is an abstract description, we should use scan_description to find it. Once found, we can use the drone's goto skill to navigate to it. If not found, we should inform the user.\",\n    \"plan\": \"obj = scan_description('empty area')\\nif obj:\\n    goto(obj)\\n    log('Arrived at the center of the empty area.')\\nelse:\\n    log('No empty area found in the view.')\"\n}",
+                "planning_time": 6.784541606903076,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532648.2513745,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532690.0187752,
+                "type": "robot_execution",
+                "planned_actions": "obj = scan_description('empty area')\nif obj:\n    goto(obj)\n    log('Arrived at the center of the empty area.')\nelse:\n    log('No empty area found in the view.')",
+                "total_run_time": 41.76740074157715,
+                "avg_path_deviation": 0.02066957952509625,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 6.784541606903076,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.02066957952509625,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S036": {
+        "scenario_info": {
+            "scenario_id": "S036",
+            "task_description": "识别树干后靠近至1米处",
+            "target_objects": [
+                "trunk"
+            ],
+            "env_params": {
+                "light_intensity": "low",
+                "obstacles": 6,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.5
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532699.6585128,
+                "type": "llm_planning",
+                "instruction": "识别树干后靠近至1米处",
+                "planning_result": "{\n    \"thoughts\": \"用户指令是‘识别树干后靠近至1米处’。当前场景中只有‘boat_1’，没有树干。需要先扫描树干，然后靠近到1米距离。使用scan_description来寻找树干，然后使用goto接近，但需要确保距离为1米。由于goto可能不会精确控制距离，可能需要结合object_dist检查并调整位置。\",\n    \"plan\": \"obj = scan_description('树干')\\nif obj:\\n    goto(obj)\\n    while True:\\n        dist = object_dist(obj)\\n        if dist > 1.0:\\n            move_forward(dist - 1.0)\\n        elif dist < 1.0:\\n            move_backward(1.0 - dist)\\n        else:\\n            break\\n    log('已靠近树干至1米处')\\nelse:\\n    log('未发现树干')\"\n}",
+                "planning_time": 7.6260974407196045,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532700.419389,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532741.2794204,
+                "type": "robot_execution",
+                "planned_actions": "obj = scan_description('树干')\nif obj:\n    goto(obj)\n    while True:\n        dist = object_dist(obj)\n        if dist > 1.0:\n            move_forward(dist - 1.0)\n        elif dist < 1.0:\n            move_backward(1.0 - dist)\n        else:\n            break\n    log('已靠近树干至1米处')\nelse:\n    log('未发现树干')",
+                "total_run_time": 40.86003136634827,
+                "avg_path_deviation": 0.5495906146566978,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 7.6260974407196045,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.5495906146566978,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S037": {
+        "scenario_info": {
+            "scenario_id": "S037",
+            "task_description": "识别草丛后在上方悬停",
+            "target_objects": [
+                "grass"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 5,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.2
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532757.3422492,
+                "type": "llm_planning",
+                "instruction": "识别草丛后在上方悬停",
+                "planning_result": "{\n    \"thoughts\": \"The user instruction is in Chinese: '识别草丛后在上方悬停' which translates to 'Identify the grass/vegetation and hover above it.' There is no 'grass' or 'vegetation' object in the scene description, only 'boat_1'. Therefore, we need to scan for an abstract object matching 'grass' or 'vegetation'. After identifying it, we need to hover above it. Since the robot has drone skills (takeoff, land, lift, set_position), we can use those. The plan: first scan for grass, then if found, go to it, take off to a safe altitude, and then position directly above it (using object_x and object_y to get its position, and assuming we want to hover at a fixed altitude, e.g., 2 meters above ground).\",\n    \"plan\": \"obj = scan_description('草丛或植被')\\nif obj:\\n    goto(obj)\\n    takeoff(2.0)\\n    x_pos = object_x(obj)\\n    y_pos = object_y(obj)\\n    # Assuming we want to hover directly above the object at current altitude (2m).\\n    # Since set_position uses NED coordinates, we need to convert from image coordinates to world coordinates.\\n    # This is a simplification: we'll assume the object's image position can be used to adjust drone position.\\n    # A more robust approach would involve mapping image coordinates to world coordinates, but that's not provided.\\n    # Instead, we can simply log that we are hovering above it.\\n    log(f'Hovering above {obj} at 2 meters altitude.')\\nelse:\\n    log('未发现草丛或植被。')\"\n}",
+                "planning_time": 14.043356895446777,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532758.2070613,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532798.5893354,
+                "type": "robot_execution",
+                "planned_actions": "obj = scan_description('草丛或植被')\nif obj:\n    goto(obj)\n    takeoff(2.0)\n    x_pos = object_x(obj)\n    y_pos = object_y(obj)\n    # Assuming we want to hover directly above the object at current altitude (2m).\n    # Since set_position uses NED coordinates, we need to convert from image coordinates to world coordinates.\n    # This is a simplification: we'll assume the object's image position can be used to adjust drone position.\n    # A more robust approach would involve mapping image coordinates to world coordinates, but that's not provided.\n    # Instead, we can simply log that we are hovering above it.\n    log(f'Hovering above {obj} at 2 meters altitude.')\nelse:\n    log('未发现草丛或植被。')",
+                "total_run_time": 40.38227415084839,
+                "avg_path_deviation": 0.6632393598556608,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 14.043356895446777,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.6632393598556608,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    },
+    "S038": {
+        "scenario_info": {
+            "scenario_id": "S038",
+            "task_description": "识别石块后低空掠过",
+            "target_objects": [
+                "rock"
+            ],
+            "env_params": {
+                "light_intensity": "medium",
+                "obstacles": 6,
+                "space_size": "8x8x3m"
+            },
+            "drone_init_pose": [
+                0.0,
+                0.0,
+                1.0
+            ],
+            "timeout": 300
+        },
+        "raw_data": [
+            {
+                "timestamp": 1776532809.7493258,
+                "type": "llm_planning",
+                "instruction": "识别石块后低空掠过",
+                "planning_result": "{\n    \"thoughts\": \"用户指令是中文，意思是'识别石块后低空掠过'。这需要先识别石块（rock），然后执行低空飞行动作。当前场景中没有石块，因此需要使用scan('rock')来寻找。找到后，需要执行低空掠过，这可能意味着飞到石块上方并保持低高度。由于指令中没有指定具体高度或距离，我将假设一个安全低空高度（例如1米），并使用goto('rock')接近石块，然后使用lift或set_position进行低空飞行。考虑到技能中有无人机相关技能（takeoff, land, lift, set_position），我将使用这些技能。首先确保无人机起飞到低空，然后扫描石块，找到后飞向石块，并保持低空掠过。\",\n    \"plan\": \"takeoff(1.0)\\nif scan('rock'):\\n    goto('rock')\\n    log('识别到石块，正在低空掠过')\\n    lift(0.5)\\n    move_forward(2.0)\\nelse:\\n    log('未找到石块')\\nland()\"\n}",
+                "planning_time": 9.149997472763062,
+                "is_understood": true
+            },
+            {
+                "timestamp": 1776532810.4452858,
+                "type": "vision_detection",
+                "detection_result": [],
+                "actual_target_count": 1,
+                "recognized_count": 0,
+                "location": [
+                    null
+                ]
+            },
+            {
+                "timestamp": 1776532860.915783,
+                "type": "robot_execution",
+                "planned_actions": "takeoff(1.0)\nif scan('rock'):\n    goto('rock')\n    log('识别到石块，正在低空掠过')\n    lift(0.5)\n    move_forward(2.0)\nelse:\n    log('未找到石块')\nland()",
+                "total_run_time": 50.470497131347656,
+                "avg_path_deviation": 0.4167225360870524,
+                "has_exception": false
+            }
+        ],
+        "metrics": {
+            "task_completion_rate": 100.0,
+            "avg_planning_time": 9.149997472763062,
+            "llm_understanding_accuracy": 100.0,
+            "vision_recognition_accuracy": 0.0,
+            "location": [
+                null
+            ],
+            "avg_path_deviation": 0.4167225360870524,
+            "exception_rate": 0.0
+        },
+        "is_completed": true
+    }
+}</pre>
+    </body>
+    </html>
+    

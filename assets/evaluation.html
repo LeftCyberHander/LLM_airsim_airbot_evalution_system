@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>无人机自主任务评测</title>
+    <style>
+        body { margin: 20px; font-family: Arial; }
+        .scenario-item { padding: 10px; margin: 5px 0; border: 1px solid #ddd; cursor: pointer; }
+        .scenario-item:hover { background: #f5f5f5; }
+        #result-area {margin-top: 20px; padding: 15px; border: 1px solid #ccc; }
+    </style>
+</head>
+<body>
+    <h1>无人机自主任务评测系统</h1>
+
+    <h2>选择测试场景</h2>
+    <div id="scenario-list">
+        {% for scenario in scenarios %}
+        <div class="scenario-item" data-id="{{ scenario.scenario_id }}">
+            {{ scenario.scenario_id }}: {{ scenario.task_description }}
+        </div>
+        {% endfor %}
+    </div>
+
+    <button id="batch-test-btn" style="margin-top: 10px; padding: 8px 20px;">批量执行所有场景</button>
+
+    <div id="result-area">
+        <h3>测试结果</h3>
+        <div id="result-content"></div>
+    </div>
+
+    <script>
+        // 执行单个场景测试
+        document.querySelectorAll('.scenario-item').forEach(item => {
+            item.addEventListener('click', async () => {
+                const scenarioId = item.dataset.id;
+                const resultArea = document.getElementById('result-content');
+                resultArea.innerHTML = `正在执行场景 ${scenarioId}...`;
+
+                const response = await fetch('/run_scenario', {
+                    method: 'POST',
+                    headers: {'Content-Type': 'application/json'},
+                    body: JSON.stringify({scenario_id: scenarioId})
+                });
+                const result = await response.json();
+
+                if (result.status === 'success') {
+                    const metrics = result.metrics;
+                    resultArea.innerHTML = `
+                        <h4>场景 ${scenarioId} 测试结果</h4>
+                        <p>任务完成状态: ${result.is_completed ? '完成' : '未完成'}</p>
+                        <p>任务完成率: ${metrics.task_completion_rate.toFixed(2)}%</p>
+                        <p>LLM平均规划耗时: ${metrics.avg_planning_time.toFixed(2)} 秒</p>
+                        <p>视觉识别准确率: ${metrics.vision_recognition_accuracy.toFixed(2)}%</p>
+                        <p>平均路径偏差: ${metrics.avg_path_deviation.toFixed(2)} 米</p>
+                    `;
+                } else {
+                    resultArea.innerHTML = `错误: ${result.message}`;
+                }
+            });
+        });
+
+        // 批量执行测试
+        document.getElementById('batch-test-btn').addEventListener('click', async () => {
+            const resultArea = document.getElementById('result-content');
+            resultArea.innerHTML = '正在批量执行所有场景测试...';
+
+            const response = await fetch('/run_batch_scenarios', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'}
+            });
+            const result = await response.json();
+
+            if (result.status === 'success') {
+                resultArea.innerHTML = `
+                    <h4>批量测试完成</h4>
+                    <p>评测报告已生成: <a href="${result.report_url}" target="_blank">查看报告</a></p>
+                `;
+            } else {
+                resultArea.innerHTML = `错误: ${result.message}`;
+            }
+        });
+    </script>
+</body>
+</html>
